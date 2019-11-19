@@ -1,0 +1,32 @@
+<%- include('header') %>
+
+<div class="ui grid">
+  <div class="four wide column"></div>
+  <div class="eight wide column">
+    <form class="ui form segment" method="post" enctype="multipart/form-data">
+      <div class="field required">
+        <label>Account</label>
+        <input placeholder="Account" type="text" name="name">
+      </div>
+      <div class="field required">
+        <label>Password</label>
+        <input placeholder="Password" type="password" name="password">
+      </div>
+      <div class="field required">
+        <label>Repeat Password</label>
+        <input placeholder="Repeat Password" type="password" name="repassword">
+      </div>
+      <div class="field required">
+        <label>Avatar</label>
+        <input type="file" name="avatar">
+      </div>
+      <div class="field required">
+        <label>Bio</label>
+        <textarea name="bio" rows="5"></textarea>
+      </div>
+      <input type="submit" class="ui button fluid" value="signup">
+    </form>
+  </div>
+</div>
+
+<%- include('footer') %>
